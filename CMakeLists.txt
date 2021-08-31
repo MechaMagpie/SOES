@@ -26,6 +26,7 @@ if(RPI_VARIANT)
   include(RPIdemo OPTIONAL)
 else()
   include(${CMAKE_SYSTEM_NAME} OPTIONAL)
+endif()
 
 # Source paths
 add_subdirectory (soes)

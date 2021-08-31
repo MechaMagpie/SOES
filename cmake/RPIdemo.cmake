@@ -1,4 +1,4 @@
-set (SOES_DEMO applications/raspberrypi_lan9252demo)
+set (SOES_DEMO applications/raspberry_lan9252demo)
 
 include_directories(
   ${SOES_SOURCE_DIR}/soes/include/sys/gcc
@@ -6,7 +6,8 @@ include_directories(
   )
 
 set(HAL_SOURCES
-  ${SOES_SOURCE_DIR}/soes/hal/raspberrypi_lan9252/esc_hw.c
+  ${SOES_SOURCE_DIR}/soes/hal/raspberrypi-lan9252/esc_hw.c
+  ${SOES_SOURCE_DIR}/soes/hal/raspberrypi-lan9252/esc_hw.h
   )
 
 # Common compile flags
